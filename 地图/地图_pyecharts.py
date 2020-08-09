@@ -10,6 +10,7 @@ def draw_map(city: str,
   :param value_lst: 下属地区值序列，与sub_cities长度相同且一一对应
   :param map_title: 标题
   :param pic_path: 图片保存路径
+  :return: None
   """
   
   # 用于对数据分段，不同段使用不同颜色，可根据需要进行调整
