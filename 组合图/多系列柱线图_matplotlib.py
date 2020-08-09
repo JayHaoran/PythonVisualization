@@ -18,16 +18,18 @@ def plot_multi_line_bar_chart(data: pd.DataFrame,
     :param line_col: 多系列折线图的分类字段
     :param bar_value_col: 多系列柱状图的值字段
     :param line_value_col: 多系列折线图的值字段
-    :param bars_colors: 
-    :param lines_colors:
-    :param bar_y_label:
-    :param line_y_label:
-    :param title:
-    :param pic_file:
+    :param bars_colors: 柱状图颜色序列，元素可以是颜色缩写或颜色代码
+    :param lines_colors: 折线图颜色序列，元素可以是颜色缩写或颜色代码
+    :param bar_y_label: 柱状图y轴标签
+    :param line_y_label: 折线图y轴标签
+    :param title: 标题
+    :param pic_file: 图片保存路径
     :return:
     """
+    # 将数据处理成可用于 Matplotlib 画图的形式
     bar_data = pd.crosstab(data[x_index], data[bar_col], values=ele_df[bar_value_col], aggfunc=np.sum)
     line_data = pd.crosstab(data[x_index], data[line_col], values=ele_df[line_value_col], aggfunc=np.sum)
+    
     labels = list(bars_data.index)
     x = np.arange(len(labels))  # the label locations
     width = 0.2  # the width of the bars
