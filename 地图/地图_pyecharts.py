@@ -1,3 +1,5 @@
+from pyecharts import Map
+
 def draw_map(city: str,
              sub_cities: (list, tuple, set),
              value_lst: (list, tuple, set), 
