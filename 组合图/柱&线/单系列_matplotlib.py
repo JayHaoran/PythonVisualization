@@ -1,3 +1,7 @@
+import matplotlib.pyplot as plt
+plt.rcParams["font.sans-serif"] = ["SimHei"]
+plt.rcParams["axes.unicode_minus"] = False
+
 def _plot_single_line_bar_chart(bar_data: pd.DataFrame,
                                 line_data: pd.DataFrame,
                                 x_index: str,
