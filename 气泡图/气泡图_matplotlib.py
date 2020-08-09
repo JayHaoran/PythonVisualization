@@ -1,3 +1,7 @@
+import matplotlib.pyplot as plt
+plt.rcParams["font.sans-serif"] = ["SimHei"]
+plt.rcParams["axes.unicode_minus"] = False
+
 def _plot_bubble_chart(bubble_x: (pd.Series, list, tuple),
                        bubble_y: (pd.Series, list, tuple),
                        bubble_size: (pd.Series, list, tuple),
