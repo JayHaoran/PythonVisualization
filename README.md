@@ -1,5 +1,6 @@
-# PythonVisualization
-Python visualiztion funtion for data analysis or data mining
+# Python可视化
+
+用于数据分析或数据挖掘的 Python 可视化方法
 
 # 文件命名方式
 
