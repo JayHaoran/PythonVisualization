@@ -1,3 +1,7 @@
+import matplotlib.pyplot as plt
+plt.rcParams["font.sans-serif"] = ["SimHei"]
+plt.rcParams["axes.unicode_minus"] = False
+
 def plot_multi_line_bar_chart(data: pd.DataFrame,
                               x_index: str,
                               bar_col: str,
