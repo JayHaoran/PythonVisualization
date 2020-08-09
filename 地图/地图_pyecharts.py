@@ -13,6 +13,7 @@ def draw_map(city: str,
   """
   
   # 用于对数据分段，不同段使用不同颜色，可根据需要进行调整
+  # 若使用连续方式，则不需要pieces和pieces_color的指定
   pieces = [{'max': 30, 'min': 6, 'label': '6-'}, {'max': 5, 'min': 4, 'label': '4~5'},
             {'max': 3, 'min': 3, 'label': '3'}, {'max': 2, 'min': 2, 'label': '2'},
             {'max': 1, 'min': 1, 'label': '1'}]
