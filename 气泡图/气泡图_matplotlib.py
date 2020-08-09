@@ -13,7 +13,7 @@ def _plot_bubble_chart(bubble_x: (pd.Series, list, tuple),
   :param bubble_x: 气泡的x轴位置
   :param bubble_y: 气泡的y轴位置
   :param bubble_size: 气泡大小
-  :param bubble_text: 气泡文本
+  :param bubble_text: 气泡注释
   :param x_label: x轴标签
   :param y_label: y轴标签
   :param title: 标题
