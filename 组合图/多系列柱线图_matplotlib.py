@@ -45,7 +45,7 @@ def plot_multi_line_bar_chart(data: pd.DataFrame,
     ax.set_xticklabels(labels, fontsize=14)
     ax.grid(axis='y', linestyle='--')
     
-    # 画折线图图
+    # 画折线图
     ax2 = ax.twinx()
     ax2.set_ylabel(line_y_label, fontsize=14)
     lines = []
@@ -68,6 +68,4 @@ def plot_multi_line_bar_chart(data: pd.DataFrame,
     
     fig.tight_layout()
     plt.savefig(pic_file, dpi=150, edgecolor="#D9D9D9", bbox_inches='tight')
-    
-    
     
